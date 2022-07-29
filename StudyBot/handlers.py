@@ -9,6 +9,5 @@ async  def send_to_admin(dp):
 @dp.message_handler()
 async def echo(message: Message):
     text = f"Привет, ты написал {message.text}"
-    await bot.send_message(chat_id= message.from_user.id, text = text)
     await  message.answer(text=text)
 
