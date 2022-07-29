@@ -8,6 +8,5 @@ async  def send_to_admin(dp):
 
 @dp.message_handler()
 async def echo(message: Message):
-    text = f"Привет, ты написал {message.text}"
+    text = f"Вова говорит: '{message.text}'"
     await  message.answer(text=text)
-

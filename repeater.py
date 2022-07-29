@@ -10,4 +10,5 @@ message = UPDATES['result'][0]['message']
 chat_id = message['from']['id']
 text = message['text']
 
-sent_message = requests.get(API_LINK + f'/sendMessage?chat_id={chat_id}&text=Привет, ты написал {text}')
+# not used anymore
+#sent_message = requests.get(API_LINK + f'/sendMessage?chat_id={chat_id}&text=Привет, ты написал(-a) {text}')
